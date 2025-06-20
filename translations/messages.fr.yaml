@@ -1,15 +1,15 @@
 meta:
-  title: 'Your Name | Portfolio'
-  description: 'Description of portfolio'
+  title: 'Quentin Macé | Portfolio'
+  description: 'Portfolio de développeur web back-end. Découvrez mes projets, compétences et expériences professionnelles.'
   keywords: 'keywords'
   
 sidebar:
-  job_title: 'Développeur Web Full-Stack'
-  location: 'Your Location'
-  tagline: 'Your Tagline'
+  job_title: 'Développeur Web Back-End'
+  location: 'Besançon, France'
+  tagline: 'Je mets mes compétences au service des projets web des startups et PME.'
   resume: 'Consulter mon CV'
   contact_button: 'Me Contacter'
-  open_to_job: 'À la recherche de nouveaux défis'
+  open_to_job: 'Je suis disponnible'
   open_to_job_description: 'En recherche active d''opportunités professionnelles'
   lets_connect: 'Prendre Contact'
 
@@ -22,7 +22,7 @@ sections:
 
 about:
   paragraph1: 'Développeur de %age% ans.'
-  paragraph2: '<span class="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Organisé, autonome, réactif et curieux</span>, je me concentre sur des solutions fiables et efficaces.'
+  paragraph2: '<span class="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Organisé, autonome, proactif et curieux</span>, je me concentre sur des solutions sécurisées, efficaces et rentables.'
 
 skills:
   categories:
@@ -77,8 +77,8 @@ contact_form:
 legal_notice:
   editor:
     title: 'Éditeur du site'
-    edited_by: 'Ce site est édité par Your Name'
-    contact: 'Contact : your-name@gmail.com'
+    edited_by: 'Ce site est édité par Quentin Macé'
+    contact: 'Contact : quentin.mace.1110@proton.me'
   hosting:
     title: 'Hébergement'
     hosted_by: 'Ce site est hébergé par'

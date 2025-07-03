@@ -87,6 +87,20 @@ class PortfolioService
     {
         return [
             [
+                'title' => 'Développeur ERP Backend',
+                'company' => 'Quarks Alchemy',
+                'location' => 'Besançon',
+                'period' => '2024 - Présent',
+                'logo' => 'companies/quarks-alchemy-logo.jpg',
+                'description' => [
+                    '↳ Développement de features backend pour un ERP industriel',
+                    '↳ Compréhension des besoins métiers et implémentation de solutions',
+                    '↳ Collaboration avec l\'équipe pour améliorer les processus de développement',
+                ],
+                'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
+                    ['PHP', 'HTML', 'CSS', 'PostgreSQL', 'TypeScript', 'Symfony', 'Tailwind CSS', 'Git', 'Postman', 'Agile', 'Scrum'])
+            ],
+            [
                 'title' => 'Compositeur VFX',
                 'company' => 'Nordisk Films Shortcut',
                 'location' => 'Copenhague',
@@ -97,15 +111,39 @@ class PortfolioService
                     '↳ Compositing et intégation d\'assets 3D pour la série "The Rain"',
                     '↳ Mise en place d\'un pipeline de production pour le compositing (Python)',
                 ],
-                'technologies' => array_map(fn($tech) => $this->findTechByName($tech), 
+                'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
                     ['Python'])
-            ]
+            ],
         ];
     }
 
     public function getEducations(): array
     {
         return [
+            [
+                'degree' => 'Formation développeur d\'applications web',
+                'school' => 'OpenClassrooms',
+                'location' => 'Besançon, France',
+                'period' => '2024-2026',
+                'logo' => 'schools/OC.jpeg',
+                'description' => [
+                    '↳ Concepts généraux sur le web et les applications web, le MVC, les bases de données et les design patterns',
+                    '↳ Languages et frameworks : PHP, Symfony, HTML, CSS...',
+                    '↳ Authentification, sécurité, API REST, tests unitaires et fonctionnels',
+                ]
+            ],
+            [
+                'degree' => 'Spécialisation en Effets Spéciaux Numériques / Compositing',
+                'school' => 'Université de Jönköping',
+                'location' => 'Eskjö, Suède',
+                'period' => '2017-2019',
+                'logo' => 'schools/universiteSuede.jpeg',
+                'description' => [
+                    '↳ Concepts généraux des effets spéciaux numériques',
+                    '↳ Compositing, rotoscoping, clean-up et intégration d\'éléments 3D',
+                    '↳ Python et pipelines d\'automatisation de la production',
+                ]
+            ],
             [
                 'degree' => 'Licence Audiovisuel, Multimédia et Sciences du Numérique',
                 'school' => 'Université de Valenciennes',

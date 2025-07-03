@@ -27,3 +27,4 @@
 ###< symfony/asset-mapper ###
 
 /.vscode/*
+/.idea/.gitignore

@@ -13,11 +13,11 @@ class PortfolioService
                 'color_text' => 'blue-400',
                 'color_hover' => 'blue-800',
                 'items' => [
+                    [ 'icon' => 'fa-brands fa-php', 'name' => 'PHP', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-html5', 'name' => 'HTML', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-css3-alt', 'name' => 'CSS', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-js', 'name' => 'JavaScript', 'display' => true ],
                     [ 'image' => 'skills/typescript.svg', 'name' => 'TypeScript', 'display' => true ],
-                    [ 'icon' => 'fa-brands fa-php', 'name' => 'PHP', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-python', 'name' => 'Python', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-java', 'name' => 'Java', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-kotlin', 'name' => 'Kotlin', 'display' => false ],
@@ -31,10 +31,10 @@ class PortfolioService
                 'color_hover' => 'red-800',
                 'items' => [
                     [ 'icon' => 'fa-brands fa-symfony', 'name' => 'Symfony', 'display' => true ],
-                    [ 'image' => 'skills/flask.png', 'name' => 'Flask', 'display' => true ],
-                    [ 'image' => 'skills/next-js.svg', 'name' => 'Next.js', 'display' => true ],
-                    [ 'icon' => 'fa-brands fa-bootstrap', 'name' => 'Bootstrap', 'display' => true ],
-                    [ 'image' => 'skills/tailwind.png', 'name' => 'Tailwind CSS', 'display' => true ]
+                    [ 'image' => 'skills/flask.png', 'name' => 'Flask', 'display' => false ],
+                    [ 'image' => 'skills/next-js.svg', 'name' => 'Next.js', 'display' => false ],
+                    [ 'image' => 'skills/tailwind.png', 'name' => 'Tailwind CSS', 'display' => true ],
+                    [ 'icon' => 'fa-brands fa-bootstrap', 'name' => 'Bootstrap', 'display' => true ]
                 ]
             ],
             'Backend' => [
@@ -43,11 +43,11 @@ class PortfolioService
                 'color_text' => 'green-400',
                 'color_hover' => 'green-800',
                 'items' => [
-                    [ 'icon' => 'fa-brands fa-node', 'name' => 'Node.js', 'display' => true ],
+                    [ 'icon' => 'fa-brands fa-node', 'name' => 'Node.js', 'display' => false ],
+                    [ 'icon' => 'fa-solid fa-database', 'name' => 'PostgreSQL', 'display' => true ],
                     [ 'icon' => 'fa-solid fa-database', 'name' => 'MySQL', 'display' => true ],
-                    [ 'icon' => 'fa-solid fa-database', 'name' => 'SQLite', 'display' => true ],
-                    [ 'icon' => 'fa-solid fa-database', 'name' => 'PostgreSQL', 'display' => false ],
-                    [ 'icon' => 'fa-solid fa-server', 'name' => 'REST APIs', 'display' => true ]
+                    [ 'icon' => 'fa-solid fa-database', 'name' => 'SQLite', 'display' => false ],
+                    [ 'icon' => 'fa-solid fa-server', 'name' => 'REST APIs', 'display' => false ]
                 ]
             ],
             'Practices' => [
@@ -57,6 +57,7 @@ class PortfolioService
                 'color_hover' => 'yellow-800',
                 'items' => [
                     [ 'icon' => 'fa-solid fa-arrows-spin', 'name' => 'Agile', 'display' => true ],
+                    [ 'icon' => 'fa-solid fa-list-check', 'name' => 'Scrum', 'display' => true ],
                     [ 'icon' => 'fa-brands fa-git-alt', 'name' => 'Git', 'display' => true ],
                     [ 'image' => 'skills/postman.svg', 'name' => 'Postman', 'display' => true ],
                 ]
@@ -86,19 +87,33 @@ class PortfolioService
     {
         return [
             [
-                'title' => 'experiences.company.title',
-                'company' => 'COMPANY NAME',
-                'location' => 'experiences.company.location',
-                'period' => 'experiences.company.period',
-                'logo' => 'companies/company.png',
+                'title' => 'Développeur ERP Backend',
+                'company' => 'Quarks Alchemy',
+                'location' => 'Besançon',
+                'period' => '2024 - Présent',
+                'logo' => 'companies/quarks-alchemy-logo.jpg',
                 'description' => [
-                    'experiences.company.description.1',
-                    'experiences.company.description.2',
-                    'experiences.company.description.3'
+                    '↳ Développement de features backend pour un ERP industriel',
+                    '↳ Compréhension des besoins métiers et implémentation de solutions',
+                    '↳ Collaboration avec l\'équipe pour améliorer les processus de développement',
                 ],
-                'technologies' => array_map(fn($tech) => $this->findTechByName($tech), 
-                    ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Node.js', 'SQLite', 'PostgreSQL', 'REST APIs', 'Git'])
-            ]
+                'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
+                    ['PHP', 'HTML', 'CSS', 'PostgreSQL', 'TypeScript', 'Symfony', 'Tailwind CSS', 'Git', 'Postman', 'Agile', 'Scrum'])
+            ],
+            [
+                'title' => 'Compositeur VFX',
+                'company' => 'Nordisk Films Shortcut',
+                'location' => 'Copenhague',
+                'period' => '2019',
+                'logo' => 'companies/nordiskFilms_logo.jpg',
+                'description' => [
+                    '↳ Rotoscopting et cleanup sur divers projets de films et séries',
+                    '↳ Compositing et intégation d\'assets 3D pour la série "The Rain"',
+                    '↳ Mise en place d\'un pipeline de production pour le compositing (Python)',
+                ],
+                'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
+                    ['Python'])
+            ],
         ];
     }
 
@@ -106,13 +121,39 @@ class PortfolioService
     {
         return [
             [
-                'degree' => 'education.school.degree',
-                'school' => 'SCHOOL NAME',
-                'location' => 'education.school.location',
-                'period' => 'education.school.period',
-                'logo' => 'schools/school.png',
+                'degree' => 'Formation développeur d\'applications web',
+                'school' => 'OpenClassrooms',
+                'location' => 'Besançon, France',
+                'period' => '2024-2026',
+                'logo' => 'schools/OC.jpeg',
                 'description' => [
-                    'education.school.description.1',
+                    '↳ Concepts généraux sur le web et les applications web, le MVC, les bases de données et les design patterns',
+                    '↳ Languages et frameworks : PHP, Symfony, HTML, CSS...',
+                    '↳ Authentification, sécurité, API REST, tests unitaires et fonctionnels',
+                ]
+            ],
+            [
+                'degree' => 'Spécialisation en Effets Spéciaux Numériques / Compositing',
+                'school' => 'Université de Jönköping',
+                'location' => 'Eskjö, Suède',
+                'period' => '2017-2019',
+                'logo' => 'schools/universiteSuede.jpeg',
+                'description' => [
+                    '↳ Concepts généraux des effets spéciaux numériques',
+                    '↳ Compositing, rotoscoping, clean-up et intégration d\'éléments 3D',
+                    '↳ Python et pipelines d\'automatisation de la production',
+                ]
+            ],
+            [
+                'degree' => 'Licence Audiovisuel, Multimédia et Sciences du Numérique',
+                'school' => 'Université de Valenciennes',
+                'location' => 'Valenciennes, France',
+                'period' => '2014 - 2017',
+                'logo' => 'schools/universiteValenciennes.png',
+                'description' => [
+                    '↳ Partie scientifique : Informatique, optique, science du signal, biologie',
+                    '↳ Partie audiovisuelle : Prise de vue, montage, son, post-production',
+                    '↳ Partie multimédia : Web, développement, design, ergonomie',
                 ]
             ]
         ];
@@ -122,14 +163,14 @@ class PortfolioService
     {
         return [
             [
-                'title' => 'projects.project.title',
-                'description' => 'projects.project.description',
+                'title' => 'QBook',
+                'description' => 'Application de réservation de salles de réunions',
                 'image' => 'projects/project.png',
-                'github' => 'https://google.com/',
-                'website' => 'https://google.com/',
-                'demo' => 'https://google.com/',
+                'github' => 'https://github.com/quentin-mace/qbook',
+                'website' => 'https://github.com/quentin-mace/qbook',
+                'demo' => 'https://github.com/quentin-mace/qbook',
                 'technologies' => array_map(fn($tech) => $this->findTechByName($tech), 
-                    ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Node.js', 'SQLite', 'PostgreSQL', 'REST APIs', 'Git'])
+                    ['HTML', 'CSS', 'MySQL', 'TypeScript', 'PHP', 'Bootstrap', 'Git'])
             ]
         ];
     }
@@ -137,17 +178,17 @@ class PortfolioService
     public function getPersonalInfo(): array
     {
         return [
-            'name' => 'Your Name',
-            'email' => 'contact@your-website.dev',
-            'birthdate' => '1970-01-01',
+            'name' => 'Quentin Macé',
+            'email' => 'quentin.mace.1110@proton.me',
+            'birthdate' => '1996-10-11',
             'files' => [
                 'cv' => 'files/cv.pdf',
                 'profile_image' => 'images/profile-image.jpg'
             ],
             'social' => [
-                'github' => 'https://github.com/your-name',
-                'email' => 'your-name@gmail.com',
-                'linkedin' => 'https://linkedin.com/in/your-name'
+                'github' => 'https://github.com/quentin-mace',
+                'email' => 'quentin.mace.1110@proton.me',
+                'linkedin' => 'https://www.linkedin.com/in/quentinmace/'
             ]
         ];
     }

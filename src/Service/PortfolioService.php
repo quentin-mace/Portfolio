@@ -47,7 +47,8 @@ class PortfolioService
                     [ 'icon' => 'fa-solid fa-database', 'name' => 'PostgreSQL', 'display' => true ],
                     [ 'icon' => 'fa-solid fa-database', 'name' => 'MySQL', 'display' => true ],
                     [ 'icon' => 'fa-solid fa-database', 'name' => 'SQLite', 'display' => false ],
-                    [ 'icon' => 'fa-solid fa-server', 'name' => 'REST APIs', 'display' => true ]
+                    [ 'icon' => 'fa-solid fa-server', 'name' => 'REST APIs', 'display' => true ],
+                    [ 'icon' => 'fa-solid fa-spider', 'name' => 'API Platform', 'display' => true ]
                 ]
             ],
             'Practices' => [
@@ -62,6 +63,7 @@ class PortfolioService
                     [ 'image' => 'skills/postman.svg', 'name' => 'Postman', 'display' => true ],
                     [ 'icon' => 'fa-solid fa-refresh', 'name' => 'CI/CD', 'display' => true ],
                     [ 'icon' => 'fa-solid fa-vial', 'name' => 'PHPunit', 'display' => true ],
+                    [ 'icon' => 'fa-solid fa-wand-sparkles', 'name' => 'AIDD', 'display' => true ],
                 ]
             ]
         ];
@@ -100,7 +102,7 @@ class PortfolioService
                     '↳ Collaboration avec l\'équipe pour améliorer les processus de développement',
                 ],
                 'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
-                    ['PHP', 'HTML', 'CSS', 'TypeScript', 'PostgreSQL', 'MySQL', 'REST APIs', 'Symfony', 'Tailwind CSS', 'Git', 'Postman', 'Agile', 'Scrum', 'CI/CD', 'PHPunit'])
+                    ['PHP', 'HTML', 'CSS', 'TypeScript', 'PostgreSQL', 'MySQL', 'REST APIs', 'API Platform', 'Symfony', 'Tailwind CSS', 'Git', 'Postman', 'Agile', 'Scrum', 'CI/CD', 'PHPunit'])
             ],
             [
                 'title' => 'Compositeur VFX',
@@ -166,7 +168,7 @@ class PortfolioService
         return [
             [
                 'title' => 'QBook',
-                'description' => 'Application de réservation de salles de réunions en php brut',
+                'description' => 'Application de réservation de salles de réunions en PHP brut',
                 'image' => 'projects/qbook.png',
                 'github' => 'https://github.com/quentin-mace/qbook',
                 'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
@@ -175,7 +177,7 @@ class PortfolioService
             [
                 'title' => 'Green Goodies',
                 'description' => 'Site de e-commerce full stack en Symfony',
-                'image' => 'projects/project.png',
+                'image' => 'projects/greengoodies.svg',
                 'github' => 'https://github.com/quentin-mace/green-goodies/tree/dev',
 //                'website' => 'https://github.com/quentin-mace/qbook',
 //                'demo' => 'https://github.com/quentin-mace/qbook',
@@ -185,12 +187,22 @@ class PortfolioService
             [
                 'title' => 'Critipixel',
                 'description' => 'Exercice de test unitaires / fonctionnels et CI/CD',
-                'image' => 'projects/project.png',
+                'image' => 'projects/critipixel.png',
                 'github' => 'https://github.com/quentin-mace/critipixel/tree/main',
                 'website' => 'https://critipixel.quentinmace.fr',
 //                'demo' => 'https://github.com/quentin-mace/qbook',
                 'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
                     ['PHP', 'MySQL', 'Symfony', 'Git', 'Agile', 'Scrum', 'CI/CD', 'PHPunit'])
+            ],
+            [
+                'title' => 'EcoGarden API',
+                'description' => 'API pour conseils de jardinage en Symfony',
+                'image' => 'projects/ecogarden.svg',
+                'github' => 'https://github.com/quentin-mace/eco_garden_api',
+//                'website' => 'https://critipixel.quentinmace.fr',
+//                'demo' => 'https://github.com/quentin-mace/qbook',
+                'technologies' => array_map(fn($tech) => $this->findTechByName($tech),
+                    ['PHP', 'PostgreSQL', 'REST APIs', 'API Platform', 'Symfony', 'Git', 'Agile', 'Scrum'])
             ],
         ];
     }

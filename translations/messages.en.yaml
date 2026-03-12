@@ -78,17 +78,7 @@ legal_notice:
   editor:
     title: 'Website Editor'
     edited_by: 'This website is edited by Your Name'
-    contact: 'Contact : your-name@gmail.com'
-  hosting:
-    title: 'Hosting'
-    hosted_by: 'This website is hosted by'
-    company_name: 'OVH'
-    company_info: 'SAS with a capital of 10 174 560 €'
-    rcs: 'RCS Lille Métropole 424 761 419 00045'
-    ape_code: 'APE Code: 2620Z'
-    vat: 'VAT Number: FR 22 424 761 419'
-    address: 'Head Office: 2 rue Kellermann - 59100 Roubaix – France'
-    phone: 'Phone: 1007'
+    contact: 'Contact : quentin.mace.1110@proton.me'
   intellectual_property:
     title: 'Intellectual Property'
     content: 'This entire website is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations.'
@@ -118,7 +108,7 @@ privacy_policy:
     description: 'This site does not use tracking or advertising cookies. Only cookies necessary for the website''s functionality may be used.'
   contact:
     title: 'Contact'
-    description: 'For any questions regarding this privacy policy or to exercise your rights, you can contact me at: your-name@gmail.com'
+    description: 'For any questions regarding this privacy policy or to exercise your rights, you can contact me at: quentin.mace.1110@proton.me'
 
 footer:
   legal_notice: 'Legal Notice'

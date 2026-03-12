@@ -25,26 +25,6 @@
                     </section>
 
                     <section>
-                        <h2 class="text-xl font-semibold mb-4" data-trans="legal_notice.hosting.title">{{ 'legal_notice.hosting.title'|trans }}</h2>
-                        <p><span data-trans="legal_notice.hosting.hosted_by">{{ 'legal_notice.hosting.hosted_by'|trans }}</span> :</p>
-                        {% set hosting_info = [
-                            'legal_notice.hosting.company_name',
-                            'legal_notice.hosting.company_info',
-                            'legal_notice.hosting.rcs',
-                            'legal_notice.hosting.ape_code',
-                            'legal_notice.hosting.vat',
-                            'legal_notice.hosting.address',
-                            'legal_notice.hosting.phone'
-                        ] %}
-                        
-                        {% for key in hosting_info %}
-                            <p data-trans="{{ key }}">
-                                {{ key|trans }}
-                            </p>
-                        {% endfor %}
-                    </section>
-
-                    <section>
                         <h2 class="text-xl font-semibold mb-4" data-trans="legal_notice.intellectual_property.title">{{ 'legal_notice.intellectual_property.title'|trans }}</h2>
                         <p data-trans="legal_notice.intellectual_property.content">{{ 'legal_notice.intellectual_property.content'|trans }}</p>
                     </section>

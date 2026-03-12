@@ -79,16 +79,6 @@ legal_notice:
     title: 'Éditeur du site'
     edited_by: 'Ce site est édité par Quentin Macé'
     contact: 'Contact : quentin.mace.1110@proton.me'
-  hosting:
-    title: 'Hébergement'
-    hosted_by: 'Ce site est hébergé par'
-    company_name: 'OVH'
-    company_info: 'SAS au capital de 10 174 560 €'
-    rcs: 'RCS Lille Métropole 424 761 419 00045'
-    ape_code: 'Code APE : 2620Z'
-    vat: 'N° TVA : FR 22 424 761 419'
-    address: 'Siège social : 2 rue Kellermann - 59100 Roubaix – France'
-    phone: 'Tel : 1007'
   intellectual_property:
     title: 'Propriété intellectuelle'
     content: "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques."
@@ -118,7 +108,7 @@ privacy_policy:
     description: 'Ce site n''utilise pas de cookies de tracking ou de publicité. Seuls les cookies nécessaires au fonctionnement du site peuvent être utilisés.'
   contact:
     title: 'Contact'
-    description: 'Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits, vous pouvez me contacter à l''adresse : your-name@gmail.com'
+    description: 'Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits, vous pouvez me contacter à l''adresse : quentin.mace.1110@proton.me'
 
 footer:
   legal_notice: 'Mentions Légales'

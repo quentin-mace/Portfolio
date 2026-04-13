@@ -1,17 +1,17 @@
 meta:
-  title: 'Your Name | Portfolio'
-  description: 'Description of portfolio'
+  title: 'Quentin Macé | Portfolio'
+  description: 'Back-end web developer portfolio. Discover my projects, skills, and professional experience.'
   keywords: 'keywords'
   
 sidebar:
-  job_title: 'Full-Stack Web Developer'
-  location: 'Your Location'
-  tagline: 'Your Tagline'
-  resume: 'View Full Resume'
-  contact_button: 'Get in Touch'
-  open_to_job: 'Open to new challenges'
-  open_to_job_description: 'Currently seeking full-time positions'
-  lets_connect: 'Let''s Connect'
+  job_title: 'Back-End Web Developer'
+  location: 'Besançon, France'
+  tagline: 'I want to contribute to open, sovereign, and sustainable digital projects, bringing my technical expertise and my ability to support others to organisations that share these values.'
+  resume: 'View my CV'
+  contact_button: 'Contact Me'
+  open_to_job: 'I am available'
+  open_to_job_description: 'Actively seeking professional opportunities'
+  lets_connect: 'Get in Touch'
 
 sections:
   about: 'About Me'
@@ -19,10 +19,10 @@ sections:
   experiences: 'Experience'
   education: 'Education'
   projects: 'Projects'
-  
+
 about:
-  paragraph1: '%age%-year-old Developer'
-  paragraph2: '<span class="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Organized, autonomous, responsive, and curious</span>, I focus on delivering reliable and efficient solutions.'
+  paragraph1: '%age%-year-old developer.'
+  paragraph2: '<span class="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Versatile developer</span>, I am looking for roles where I can design, deploy, and promote open source solutions when possible, while making it easier for teams and users to adopt them.'
 
 skills:
   categories:
@@ -53,7 +53,7 @@ education:
 
 projects:
   links:
-    view_code: 'View Code'
+    view_code: 'Source Code'
     visit_website: 'Visit Website'
     live_demo: 'Demo'
   project:
@@ -61,14 +61,14 @@ projects:
     description: 'Project Description'
 
 contact_form:
-  title: 'Get in Touch'
+  title: 'Contact Me'
   name: 'Name'
   name_placeholder: 'Your name'
   email: 'Email'
   email_placeholder: 'Your email'
   message: 'Message'
   message_placeholder: 'Your message'
-  send: 'Send Message'
+  send: 'Send'
   cancel: 'Cancel'
   privacy_consent: "I agree that my data will be processed in accordance with the <a href='%privacy_url%' class='link link-primary' target='_blank'>privacy policy</a>."
   success_message: 'Your message has been sent successfully'
@@ -76,52 +76,52 @@ contact_form:
 
 legal_notice:
   editor:
-    title: 'Website Editor'
-    edited_by: 'This website is edited by Your Name'
-    contact: 'Contact : quentin.mace.1110@proton.me'
+    title: 'Website publisher'
+    edited_by: 'This website is published by Quentin Macé'
+    contact: 'Contact: quentin.mace.1110@proton.me'
   intellectual_property:
-    title: 'Intellectual Property'
+    title: 'Intellectual property'
     content: 'This entire website is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations.'
   links:
     title: 'Hyperlinks'
-    content: 'The website may contain hyperlinks to other sites. I am not responsible for the content of these external sites.'
+    content: 'This site may contain hyperlinks to other websites. I am not responsible for the content of those external sites.'
 
 privacy_policy:
   data_collection:
-    title: 'Data Collection'
+    title: 'Data collection'
     description: 'Personal data collected on this site is limited to the information you voluntarily provide through the contact form:'
     fields:
       name: 'Name'
       email: 'Email address'
       message: 'Message'
   data_usage:
-    title: 'Data Usage'
-    description: 'The information you provide is used solely to respond to your messages and is never shared with third parties.'
+    title: 'Use of data'
+    description: 'The information you send us is used solely to respond to your messages and is never shared with third parties.'
   data_retention:
-    title: 'Data Retention'
-    description: 'Personal data is retained for the duration necessary to manage our relationship with you.'
+    title: 'Data retention'
+    description: 'Personal data is kept only for as long as needed to manage our relationship with you.'
   your_rights:
-    title: 'Your Rights'
-    description: 'In accordance with the French "Data Protection Act" of January 6, 1978, as amended, and European Regulation No. 2016/679/EU of April 27, 2016, you have the right to access, rectify, port, and delete your data.'
+    title: 'Your rights'
+    description: 'In accordance with the French Data Protection Act of 6 January 1978 as amended and European Regulation No. 2016/679/EU of 27 April 2016, you have the right to access, rectify, port, and erase your data.'
   cookies:
     title: 'Cookies'
-    description: 'This site does not use tracking or advertising cookies. Only cookies necessary for the website''s functionality may be used.'
+    description: 'This site does not use tracking or advertising cookies. Only cookies required for the site to work may be used.'
   contact:
     title: 'Contact'
-    description: 'For any questions regarding this privacy policy or to exercise your rights, you can contact me at: quentin.mace.1110@proton.me'
+    description: 'For any question about this privacy policy or to exercise your rights, you can contact me at: quentin.mace.1110@proton.me'
 
 footer:
   legal_notice: 'Legal Notice'
   privacy_policy: 'Privacy Policy'
 
 common:
-  back_to_home: '&larr; Back to Home'
+  back_to_home: '&larr; Back to home'
 
 contact_email:
   admin_subject: 'New message from %email%'
-  user_subject: 'Message Received'
+  user_subject: 'Message received'
   name_label: 'Name'
   email_label: 'Email'
   message_label: 'Message'
-  thank_you_message: 'Thank you for your message and interest, I will get back to you as soon as possible.'
-  regards: 'Best regards'
+  thank_you_message: 'Thank you for your message and your interest; I will get back to you as soon as possible.'
+  regards: 'Kind regards'

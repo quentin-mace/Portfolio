@@ -112,7 +112,7 @@ class PortfolioService
                 'logo' => 'companies/nordiskFilms_logo.jpg',
                 'description' => [
                     '↳ Rotoscopting et cleanup sur divers projets de films et séries',
-                    '↳ Compositing et intégation d\'assets 3D pour la série "The Rain"',
+                    '↳ Compositing et intégration d\'assets 3D pour la série "The Rain"',
                     '↳ Mise en place d\'un pipeline de production pour le compositing (Python)',
                 ],
                 'technologies' => array_map(fn($tech) => $this->findTechByName($tech),

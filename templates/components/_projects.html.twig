@@ -8,7 +8,7 @@
                 <!-- Background Image with overlay -->
                 <div class="absolute inset-0 z-0 opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-300">
                     <img src="{{ asset('images/' ~ project.image) }}" 
-                         alt="{{ project.title|trans }}" 
+                         alt="{{ project.title_key|trans }}" 
                          class="w-full h-full object-cover">
                     <!-- Dark overlay -->
                     <div class="absolute inset-0 bg-base-100/60"></div>
@@ -18,14 +18,14 @@
                 <div class="relative z-10 flex flex-col flex-grow p-4 pt-2">
                     <!-- Project Title -->
                     <div class="text-center w-fit mx-auto mb-1">
-                        <h3 class="text-lg font-bold w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" data-trans="{{ project.title }}">
-                            {{ project.title|trans }}
+                        <h3 class="text-lg font-bold w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" data-trans="{{ project.title_key }}">
+                            {{ project.title_key|trans }}
                         </h3>
                     </div>
 
                     <!-- Description -->
-                    <p class="text-sm leading-tight mb-3 text-justify" data-trans="{{ project.description }}">
-                        {{ project.description|trans }}
+                    <p class="text-sm leading-tight mb-3 text-justify" data-trans="{{ project.description_key }}">
+                        {{ project.description_key|trans }}
                     </p>
 
                     <!-- Spacer to push badges and links to bottom -->
@@ -38,9 +38,9 @@
                                 {% if tech.icon is defined %}
                                     <i class="{{ tech.icon }} mr-0.5 text-xs"></i>
                                 {% else %}
-                                    <img src="{{ asset('images/' ~ tech.image) }}" alt="{{ tech.name }}" class="w-2.5 h-2.5 mr-1">
+                                    <img src="{{ asset('images/' ~ tech.image) }}" alt="{{ tech.label_key|trans }}" class="w-2.5 h-2.5 mr-1">
                                 {% endif %}
-                                {{ tech.name }}
+                                <span data-trans="{{ tech.label_key }}">{{ tech.label_key|trans }}</span>
                             </div>
                         {% endfor %}
                     </div>

@@ -2,7 +2,92 @@ meta:
   title: 'Quentin Macé | Portfolio'
   description: 'Portfolio de développeur web back-end. Découvrez mes projets, compétences et expériences professionnelles.'
   keywords: 'keywords'
-  
+
+portfolio:
+  skill:
+    php: 'PHP'
+    html: 'HTML'
+    css: 'CSS'
+    javascript: 'JavaScript'
+    typescript: 'TypeScript'
+    python: 'Python'
+    java: 'Java'
+    kotlin: 'Kotlin'
+    swift: 'Swift'
+    symfony: 'Symfony'
+    flask: 'Flask'
+    nextjs: 'Next.js'
+    tailwind_css: 'Tailwind CSS'
+    bootstrap: 'Bootstrap'
+    nodejs: 'Node.js'
+    postgresql: 'PostgreSQL'
+    mysql: 'MySQL'
+    sqlite: 'SQLite'
+    rest_apis: 'API REST'
+    api_platform: 'API Platform'
+    agile: 'Agile'
+    scrum: 'Scrum'
+    git: 'Git'
+    postman: 'Postman'
+    cicd: 'CI/CD'
+    phpunit: 'PHPUnit'
+    aidd: 'AIDD'
+  experience:
+    quarks:
+      title: 'Développeur ERP Backend'
+      location: 'Besançon'
+      period: '2024 - Présent'
+      description:
+        0: '↳ Développement de features backend pour un ERP industriel'
+        1: '↳ Compréhension des besoins métiers et implémentation de solutions'
+        2: '↳ Collaboration avec l''équipe pour améliorer les processus de développement'
+    nordisk:
+      title: 'Compositeur VFX'
+      location: 'Copenhague'
+      period: '2019'
+      description:
+        0: '↳ Rotoscopting et cleanup sur divers projets de films et séries'
+        1: '↳ Compositing et intégration d''assets 3D pour la série « The Rain »'
+        2: '↳ Mise en place d''un pipeline de production pour le compositing (Python)'
+  education:
+    oc:
+      degree: 'Formation développeur d''applications web'
+      location: 'Besançon, France'
+      period: '2024-2026'
+      description:
+        0: '↳ Concepts généraux sur le web et les applications web, le MVC, les bases de données et les design patterns'
+        1: '↳ Langages et frameworks : PHP, Symfony, HTML, CSS…'
+        2: '↳ Authentification, sécurité, API REST, tests unitaires et fonctionnels'
+    jonkoping:
+      degree: 'Spécialisation en effets spéciaux numériques / compositing'
+      location: 'Eskjö, Suède'
+      period: '2017-2019'
+      description:
+        0: '↳ Concepts généraux des effets spéciaux numériques'
+        1: '↳ Compositing, rotoscoping, clean-up et intégration d''éléments 3D'
+        2: '↳ Python et pipelines d''automatisation de la production'
+    valenciennes:
+      degree: 'Licence audiovisuel, multimédia et sciences du numérique'
+      location: 'Valenciennes, France'
+      period: '2014 - 2017'
+      description:
+        0: '↳ Partie scientifique : informatique, optique, science du signal, biologie'
+        1: '↳ Partie audiovisuelle : prise de vue, montage, son, post-production'
+        2: '↳ Partie multimédia : web, développement, design, ergonomie'
+  project:
+    qbook:
+      title: 'QBook'
+      description: 'Application de réservation de salles de réunion en PHP brut'
+    green_goodies:
+      title: 'Green Goodies'
+      description: 'Site e-commerce full stack en Symfony'
+    critipixel:
+      title: 'Critipixel'
+      description: 'Exercice sur les tests unitaires / fonctionnels et la CI/CD'
+    ecogarden:
+      title: 'EcoGarden API'
+      description: 'API de conseils de jardinage en Symfony'
+
 sidebar:
   job_title: 'Développeur Web Back-End'
   location: 'Besançon, France'

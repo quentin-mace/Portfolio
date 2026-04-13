@@ -2,7 +2,93 @@ meta:
   title: 'Quentin Macé | Portfolio'
   description: 'Back-end web developer portfolio. Discover my projects, skills, and professional experience.'
   keywords: 'keywords'
-  
+
+portfolio:
+  skill:
+    php: 'PHP'
+    html: 'HTML'
+    css: 'CSS'
+    javascript: 'JavaScript'
+    typescript: 'TypeScript'
+    python: 'Python'
+    java: 'Java'
+    kotlin: 'Kotlin'
+    swift: 'Swift'
+    symfony: 'Symfony'
+    flask: 'Flask'
+    nextjs: 'Next.js'
+    tailwind_css: 'Tailwind CSS'
+    bootstrap: 'Bootstrap'
+    nodejs: 'Node.js'
+    postgresql: 'PostgreSQL'
+    mysql: 'MySQL'
+    sqlite: 'SQLite'
+    rest_apis: 'REST APIs'
+    api_platform: 'API Platform'
+    agile: 'Agile'
+    scrum: 'Scrum'
+    git: 'Git'
+    postman: 'Postman'
+    cicd: 'CI/CD'
+    phpunit: 'PHPUnit'
+    aidd: 'AIDD'
+  experience:
+    quarks:
+      title: 'ERP Backend Developer'
+      location: 'Besançon'
+      period: '2024 - Present'
+      description:
+        0: '↳ Backend feature development for an industrial ERP'
+        1: '↳ Understanding business needs and implementing solutions'
+        2: '↳ Working with the team to improve development practices'
+    nordisk:
+      title: 'VFX Compositor'
+      location: 'Copenhagen'
+      period: '2019'
+      description:
+        0: '↳ Rotoscoping and cleanup on various film and series projects'
+        1: '↳ Compositing and 3D asset integration for the series “The Rain”'
+        2: '↳ Building a compositing production pipeline (Python)'
+  education:
+    oc:
+      degree: 'Web application developer training'
+      location: 'Besançon, France'
+      period: '2024-2026'
+      description:
+        0: '↳ Web and web app fundamentals, MVC, databases, and design patterns'
+        1: '↳ Languages and frameworks: PHP, Symfony, HTML, CSS…'
+        2: '↳ Authentication, security, REST APIs, unit and functional testing'
+    jonkoping:
+      degree: 'Specialisation in digital visual effects / compositing'
+      school: 'Jönköping University'
+      location: 'Eksjö, Sweden'
+      period: '2017-2019'
+      description:
+        0: '↳ Fundamentals of digital visual effects'
+        1: '↳ Compositing, rotoscoping, clean-up, and 3D integration'
+        2: '↳ Python and automation pipelines for production'
+    valenciennes:
+      degree: 'Bachelor’s in audiovisual, multimedia, and digital sciences'
+      location: 'Valenciennes, France'
+      period: '2014 - 2017'
+      description:
+        0: '↳ Science track: computing, optics, signal processing, biology'
+        1: '↳ Audiovisual track: filming, editing, sound, post-production'
+        2: '↳ Multimedia track: web, development, design, ergonomics'
+  project:
+    qbook:
+      title: 'QBook'
+      description: 'Meeting room booking app in plain PHP'
+    green_goodies:
+      title: 'Green Goodies'
+      description: 'Full-stack e-commerce site in Symfony'
+    critipixel:
+      title: 'Critipixel'
+      description: 'Exercise on unit/functional testing and CI/CD'
+    ecogarden:
+      title: 'EcoGarden API'
+      description: 'Gardening advice API in Symfony'
+
 sidebar:
   job_title: 'Back-End Web Developer'
   location: 'Besançon, France'

@@ -14,9 +14,9 @@
                                 {% if item.icon is defined %}
                                     <i class="{{ item.icon }} mr-1"></i>
                                 {% else %}
-                                    <img src="{{ asset('images/' ~ item.image) }}" alt="{{ item.name }}" class="w-3 h-3 mr-1">
+                                    <img src="{{ asset('images/' ~ item.image) }}" alt="{{ item.label_key|trans }}" class="w-3 h-3 mr-1">
                                 {% endif %}
-                                {{ item.name }}
+                                <span data-trans="{{ item.label_key }}">{{ item.label_key|trans }}</span>
                             </div>
                         {% endif %}
                     {% endfor %}
